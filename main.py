@@ -19,8 +19,8 @@ ticket_medio = ticket_medio.rename(columns={0: 'Ticket Médio'})
 print(ticket_medio)
 
 def setup():
-    email_user = 'deborafs.ferreira@gmail.com'
-    email_pass = 'fpvakczpphoixlau'
+    email_user = 'seu_email@gmail.com'
+    email_pass = 'sua senha que será gerada no gmail'
     server_smtp = 'smtp.gmail.com'
     server_port = 465
     timeout = 10.0
@@ -46,7 +46,7 @@ def setup_and_send(receiver_email='', subject_line='', message_body=''):
 <p>Qualquer dúvida estou à disposição.</p>
 
 <p>Att.,</p>
-<p>Débora</p>
+<p>Seu nome</p>
 '''
     message = texto_padrao
     subject = subject_line
@@ -72,7 +72,7 @@ def setup_and_send(receiver_email='', subject_line='', message_body=''):
         server.login(email_user, email_pass)
         server.sendmail(email_user, to_addrs, msg.as_string())
 
-def main(receiver_email='deborafs.ferreira@gmail.com', subject_line='Relatório', message_body=''):
+def main(receiver_email='email_destinatario@gmail.com', subject_line='Relatório', message_body=''):
     if receiver_email:
         setup_and_send(receiver_email, subject_line, message_body)
     else:
