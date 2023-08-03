@@ -31,7 +31,7 @@ Automação em Python desenvolvida como projeto final para a escola Maria Helena
   - No Shell do ambiente Repl.it executar o comando <code>python main.py</code>
 
 # Considerações finais
-O objetivo deste código é a manipulação dos dados da tabela Vendas.xlsx e envio desses dados manipulados por e-mail para algum detinatário. A automação envia esses dados de forma formatada usando tags html.
+O objetivo deste código é a manipulação dos dados da tabela Vendas.xlsx, impressão desses dados manipulados no Shell e envio deles por e-mail para algum detinatário. A automação envia um e-mail formatado por meio de tags html com as informações manipuladas.
 
 
   
